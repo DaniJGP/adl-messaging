@@ -21,3 +21,50 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100vh;
+  width: auto;
+}
+
+.sidebar {
+  display:flex;
+  flex-flow: column nowrap;
+}
+
+.usuario {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.tiny-thumbnail {
+  height:45px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.small-thumbnail {
+  height: 65px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.chat {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  text-align: center;
+}
+
+.chat .logo {
+  height: auto;
+  max-width: 100px;
+}
+
+.btn {
+  }
