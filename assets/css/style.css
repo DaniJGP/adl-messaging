@@ -28,6 +28,7 @@ main {
   height: 100vh;
   width: 100vw;
   background-color: var(--platinum);
+  color: var(--dark-jungle);
 }
 
 /* Sidebar */
@@ -40,10 +41,8 @@ main {
   height: 100%;
   width: 35%;
   min-width: 300px;
-  position:sticky;
   overflow-y: scroll;
-  top: 0;
-  bottom: 0;
+  overflow-x: hidden;
   background-color: var(--white);
 }
 
@@ -90,7 +89,7 @@ main {
 
 .new-chat {
   display: flex;
-  flex: 0 0 7rem;
+  flex: 0 0 8rem;
   justify-content: center;
   align-items: center;
 }
@@ -107,18 +106,27 @@ main {
   gap: 1rem;
 }
 
+.contact-info {
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
 .contact-name {
   font-size: var(--medium)
 }
 
 .contact-msg {
   font-size: var(--small);
+  color: var(--outer-space);
+  white-space: nowrap;
 }
-
 
 /* Chat section */
 
-.chat {
+#chat {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -126,12 +134,14 @@ main {
   width: 100%;
   margin: auto;
   text-align: center;
+  gap: 1rem;
 }
 
-.chat h1 {
+#chat h1 {
   font-size: var(--large);
+  font-weight: 400;
 }
-.chat .logo {
+#chat .logo {
   max-height: 300px;
   width: auto;
 }
