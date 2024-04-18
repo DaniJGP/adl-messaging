@@ -84,7 +84,7 @@ main {
 
 .user-status {
   font-size: var(--x-small);
-  color: var(--gray);
+  color: var(--old-silver);
 }
 
 .user-icons {
@@ -185,6 +185,7 @@ main {
   font-size: var(--medium);
   color: white;
   padding: 1rem 3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-primary {
@@ -202,12 +203,13 @@ main {
 .tiny-thumbnail {
   height: 45px;
   width: auto;
-  border: 1px solid var(--pale-lavender);
+  border: 2px solid var(--gray);
   border-radius: 50%;
 }
 
 .small-thumbnail {
   height: 55px;
   width: auto;
+  border: 2px solid var(--gray);  
   border-radius: 50%;
 }
